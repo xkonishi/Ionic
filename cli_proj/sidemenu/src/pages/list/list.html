@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>活動登録</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label stacked>取引先</ion-label>
+    <ion-input value="キヤノンITS"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="onClickInput($event)">音声入力</button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>説明</ion-label>
+    <ion-textarea id="desc" rows=8 value={{description}}></ion-textarea>
+  </ion-item>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-col>
+        <button ion-button outline (click)="onClickSave($event)">登録</button>
+        <button ion-button outline (click)="onClickCancel($event)">キャンセル</button>
+      </ion-col>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
