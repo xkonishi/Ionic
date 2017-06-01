@@ -1,0 +1,19 @@
+﻿サンプルの説明
+------------------------
+動作には"AmiVoice SDK for iOS(Professional）"の
+AmiVoiceSDK.frameworksとservice id/password/*licが必要です。
+※SDK同梱のAmiVoiceSDKSampleの使い方とほぼ同じです。
+
+・AmiVoiceSDKを解凍し、HelloApp/platforms/ios/AmiVoiceSDKフォルダに上書き
+・*licをbundle resource直下に配置
+・AppDelegate.mのsetup()でserviceId/servicePassword/licenseFileNameを指定
+・録音を許可するためInfo.plistにPrivacy - Microphone Usage Descriptionを指定
+
+デフォルトのindex.htmlにtextarea、index.jsにtextareaに値を代入するfunction text(t)を実装しております。
+ネイティブからはresultReceivedでUIWebViewの
+stringByEvaluatingJavaScriptFromStringでtext(t)を実行しているだけです
+
+サンプルとなりますため、録音/音声認識開始はsetup実行後1回のみとなっておりますので、
+音声認識サーバのセッションがきれたら音声認識はできなくなります。
+再接続ボタンを追加いただく等の実装をお願いします。
+
