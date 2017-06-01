@@ -2,12 +2,22 @@
 ------------------------
 動作には"AmiVoice SDK for iOS(Professional）"の
 AmiVoiceSDK.frameworksとservice id/password/*licが必要です。
+★AmiVoiceSDK.frameworks？
+★service id/password/*lic？
 ※SDK同梱のAmiVoiceSDKSampleの使い方とほぼ同じです。
 
 ・AmiVoiceSDKを解凍し、HelloApp/platforms/ios/AmiVoiceSDKフォルダに上書き
+★AmiVoiceSDK →sampe/AmiVoiceSDK_1.10.3.zip？
+★zip内（AmiVoice,AmiVoiceSDK,AmiVoiceSDK.xcodeproj）全てコピー？
+
 ・*licをbundle resource直下に配置
+★bundle resource？
+
 ・AppDelegate.mのsetup()でserviceId/servicePassword/licenseFileNameを指定
+★serviceId/servicePassword/licenseFileName
+
 ・録音を許可するためInfo.plistにPrivacy - Microphone Usage Descriptionを指定
+★Info.plist →HelloApp/platforms/ios/AmiVoiceSDK/Info.plist？
 
 デフォルトのindex.htmlにtextarea、index.jsにtextareaに値を代入するfunction text(t)を実装しております。
 ネイティブからはresultReceivedでUIWebViewの
