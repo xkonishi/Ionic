@@ -40,3 +40,12 @@ stringByEvaluatingJavaScriptFromStringでtext(t)を実行しているだけで�
 音声認識サーバのセッションがきれたら音声認識はできなくなります。
 再接続ボタンを追加いただく等の実装をお願いします。
 
+
+
+
+
+
+https://upload.hdedrive.com/ui/advanced-media.co.jp/dl/SB1496723265-f70d9781-d87e-4942-bf3e-5d2e9d18f96a
++D%2vyFhej78
+ami2canon-its
+
