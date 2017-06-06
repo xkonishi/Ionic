@@ -2,22 +2,35 @@
 ------------------------
 動作には"AmiVoice SDK for iOS(Professional）"の
 AmiVoiceSDK.frameworksとservice id/password/*licが必要です。
-★AmiVoiceSDK.frameworks？
-★service id/password/*lic？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+質問１）AmiVoiceSDK.frameworks は何のファイルで、何処にあるのでしょうか？
+質問２）service id/password は何でしょうか？
+質問３）*lic は何でしょうか？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ※SDK同梱のAmiVoiceSDKSampleの使い方とほぼ同じです。
 
 ・AmiVoiceSDKを解凍し、HelloApp/platforms/ios/AmiVoiceSDKフォルダに上書き
-★AmiVoiceSDK →sampe/AmiVoiceSDK_1.10.3.zip？
-★zip内（AmiVoice,AmiVoiceSDK,AmiVoiceSDK.xcodeproj）全てコピー？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+質問４）AmiVoiceSDK は sampe/AmiVoiceSDK_1.10.3.zip のことでしょうか？
+質問５）zip内（AmiVoice,AmiVoiceSDK,AmiVoiceSDK.xcodeproj）全てコピーするのでしょうか？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ・*licをbundle resource直下に配置
-★bundle resource？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+質問６）*lic はどこにあるのでしょうか？
+質問７）bundle resource は何を指しているのでしょうか？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ・AppDelegate.mのsetup()でserviceId/servicePassword/licenseFileNameを指定
-★serviceId/servicePassword/licenseFileName
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+質問８）具体的に、どの様な値を設定するのでしょうか？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ・録音を許可するためInfo.plistにPrivacy - Microphone Usage Descriptionを指定
-★Info.plist →HelloApp/platforms/ios/AmiVoiceSDK/Info.plist？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+質問９）Info.plist は HelloApp/platforms/ios/AmiVoiceSDK/Info.plist のことでしょうか？
+質問１０）具体的に、どの部分をどのように書き換えればいいのでしょうか？
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 デフォルトのindex.htmlにtextarea、index.jsにtextareaに値を代入するfunction text(t)を実装しております。
 ネイティブからはresultReceivedでUIWebViewの
